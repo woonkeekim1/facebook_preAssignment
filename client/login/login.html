@@ -1,8 +1,8 @@
 <template name="login">
   <form class="login-form">
-    <div class="login-container">
-      <div class="login-field">
-        <div class="login-field-title">
+    <div class="login-container col-6">
+      <div class="login-field col-12">
+        <div class="login-field-title col-3">
           Email:
         </div>
         <input type="text" name="email">
@@ -14,7 +14,26 @@
         <input type="password" name="password">
       </div>
       <div class="login-field">
-        <input class="login-button" type="submit" value="Log In">
+        {{#if isLogin}}
+          <input class="login-button col-12" type="submit" value="Log In">
+        {{else}}
+          <input class="login-button col-12" type="submit" value="Register">
+        {{/if}}
+      </div>
+      <div class="login-field">
+        <p id="loginState">
+          {{#if isLogin}}
+            register
+          {{else}}
+            login
+          {{/if}}
+        </p>
+      </div>
+      <div class="login-field line-through">
+        <span>or</span>
+      </div>
+      <div class="login-field">
+        <input class="login-button facebook col-12" type="button" value="Sign in with Facebook">
       </div>
     </div>
   </form>

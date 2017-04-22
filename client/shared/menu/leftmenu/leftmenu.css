@@ -1,0 +1,30 @@
+.leftmenu-container {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 18px;
+}
+
+.leftmenu-container > .menu {
+  padding: 0;
+  margin: 0;
+  background-color: #3b5998;
+}
+
+.leftmenu-container > .menu > li{
+  list-style: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-bottom: solid 1px #3b59ff;
+  color: white;
+}
+
+.leftmenu-container > .menu > li:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .leftmenu-container {
+    display: none;
+  }
+}

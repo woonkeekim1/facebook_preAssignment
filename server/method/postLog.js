@@ -1,11 +1,13 @@
 import PostLog from '../../collection/postLog'
 
 Meteor.methods({
-  'postLog.insert'({postId, type}) {
+  'postLog.insert'({postId, pageId, postedBy, type}) {
     const result = PostLog.insert({
       postId,
+      pageId,
+      postedBy,
       type,
-      createdAt: new Date(),
+      postedAt: new Date(),
     });
 
     if(result === false) {

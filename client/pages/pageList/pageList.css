@@ -1,0 +1,14 @@
+.page-container {
+
+}
+.page-container >.page-header {
+  background-color: red;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position:relative;
+  margin-bottom: 10px;
+  background-color: #8b9dc3;
+  display: table;
+  cursor: pointer;
+}

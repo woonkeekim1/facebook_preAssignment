@@ -1,0 +1,45 @@
+.page-list-container {
+  float: left;
+}
+
+.page-post-container {
+
+}
+.page-post-container > .add-page-container {
+
+}
+.page-post-container > .add-page-container >.add-form {
+  display: none;
+}
+
+.editable-div {
+    box-sizing: border-box;
+    margin: 10px 0px;
+    background-color: white;
+    border-radius:5px;
+    padding: 5px;
+}
+
+.editable-div-error {
+  border: solid 1px red;
+}
+
+.editable-div:before {
+
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-placeholder)
+}
+
+
+
+.editable-div:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .page-list-container{
+    margin-top: 40px;
+  }
+}

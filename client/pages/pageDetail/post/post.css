@@ -1,0 +1,66 @@
+.post-container {
+  box-sizing: border-box;
+  border: solid 1px #3b5998;
+  margin-top: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 5px 5px #888888;
+}
+
+.post-container > .post-header {
+  background-color: #8b9dc3;
+}
+
+.post-container > .post-header > .post-action-container {
+  float: right;
+}
+
+.post-container > .post-header > .post-action-container > .post-action {
+  cursor: pointer;
+}
+
+.post-container > .post-header > .post-action-container > .post-action-dropdown {
+  display: none;
+}
+
+.post-container > .post-header > .post-action-container > .post-action-dropdown > ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  box-shadow: 0px 3px 3px #888888;
+  border-style: solid;
+  border-width: 5px 0px 5px 0px;
+  border-color: white;
+}
+
+.post-container > .post-header > .post-action-container > .post-action-dropdown > ul > li {
+  list-style: none;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 5px;
+  letter-spacing: 0.2px;
+}
+
+.post-container > .post-header > .post-action-container > .post-action-dropdown > ul > li:hover {
+  background-color: #3b5998;
+  color: white;
+  cursor: pointer;
+}
+
+.post-container > .post-content {
+  padding: 10px;
+  background-color: white;
+}
+
+.post-container > .post-header > .post-action {
+  float: right;
+}
+
+.post-container > .post-header > .post-action:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .post-container > .post-header > .post-action-container > .post-action-dropdown > ul {
+    right: 5%;
+  }
+}

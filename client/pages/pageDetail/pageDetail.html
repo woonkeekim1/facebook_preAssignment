@@ -1,0 +1,47 @@
+<template name='pageDetail'>
+  <body>
+    <div class='container col-9'>
+      {{> topmenu}}
+      {{> leftmenu}}
+      <div class='col-9 page-list-container'>
+        <h1>Page lists</h1>
+        <div class='page-container' data-pageId='{{id}}'>
+          <div class='page-header col-12'>
+            <div>
+              {{pageName}}
+            </div>
+            <div>
+              Filter:
+              <select class='post-type-filter' name='postTypeFilter' style='outline:none;'>
+                <option value="published" selected>Published</option>
+                <option value="unpublished">Unpublished</option>
+              </select>
+            </div>
+          </div>
+          <div class='page-post-container'>
+            <div class='add-page-container'>
+              <button class='btn btn-primary add-button' type='button'>+ Add</button>
+              <form data-pageId='{{id}}' class='add-form'>
+                <div class='editable-div' contentEditable=true data-placeholder="Enter text here" name='message'></div>
+                <div>
+                  <input type="checkbox" name="published" value="published">Publish
+                  <button class='btn btn-primary' type='submit'>Post</button>
+                  <div class='button-container'>
+                    <button type='button'
+                            class='btn btn-primary post-more-info'
+                    >
+                      <i class="arrow-down"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          {{#each postList}}
+            {{> post}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </body>
+</template>

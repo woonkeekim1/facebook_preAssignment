@@ -1,0 +1,11 @@
+.button-container{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button-container > .post-more-info {
+  background-color: #3b5998;
+  padding: 3px;
+  margin: 0;
+  outline: none;
+}

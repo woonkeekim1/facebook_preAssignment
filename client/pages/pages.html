@@ -1,0 +1,16 @@
+<template name='pages'>
+  <body>
+    <div class='container col-9'>
+      {{> topmenu}}
+      {{> leftmenu}}
+      <div class='col-9 page-list-container'>
+        <h1>Page lists</h1>
+        {{#if currentUser}}
+          {{#each pages}}
+            {{> pageList}}
+          {{/each}}
+        {{/if}}
+      </div>
+    </div>
+  </body>
+</template>

@@ -1,0 +1,67 @@
+.post-tail-container {
+  display: table;
+  table-layout: fixed;
+  background-color: #f7f7f7;
+}
+
+.post-tail-container > .post-tail-item {
+  display:table-cell;
+  color: #666666;
+  cursor: pointer;
+}
+
+.post-tail-container > .post-tail-item:hover {
+  text-decoration: underline;
+  color: #444444;
+}
+
+.post-tail-container > .like::before {
+  background-image: url('https://www.facebook.com/rsrc.php/v3/yT/r/85mcPJnIf-H.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -93px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 6px -3px 0;
+}
+
+.post-tail-container > .comment::before {
+  background-image: url('https://www.facebook.com/rsrc.php/v3/yT/r/85mcPJnIf-H.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -34px -76px;
+  content: '';
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 6px -3px 0;
+}
+
+.post-tail-comment{
+  display: none;
+}
+
+.post-tail-write-comment {
+  display: table;
+  table-layout: fixed;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.user-image {
+  display: table-cell;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.comment-input-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  border: solid 1px #888888;
+}

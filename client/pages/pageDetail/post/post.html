@@ -1,0 +1,13 @@
+<template name="post">
+  <div class='post-container col-12' data-postId={{id}}>
+    <div class='post-header'>
+      {{> feedUserHeader from=from created_time=created_time}}
+    </div>
+    <div class='post-content'>
+      {{message}}
+    </div>
+    <div class='post-tail'>
+      {{> postTail postId=id}}
+    </div>
+  </div>
+</template>

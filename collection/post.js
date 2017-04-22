@@ -1,13 +1,19 @@
 import { Mongo } from 'meteor/mongo'
 
 const postSchema = new SimpleSchema({
-    contents: {
+    message: {
       type: String,
     },
-    createdBy: {
+    postId: {
       type: String,
     },
-    createdAt: {
+    pageId: {
+      type: String,
+    },
+    postedBy: {
+      type: String,
+    },
+    postedAt: {
       type: Date,
     },
 });

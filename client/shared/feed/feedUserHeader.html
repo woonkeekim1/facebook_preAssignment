@@ -1,0 +1,32 @@
+<template name="feedUserHeader">
+  <div class="user-profile-container col-12">
+    <div class="user-profile-image">
+      <img src="{{from.picture.data.url}}">
+    </div>
+    <div class="user-profile-detail">
+      <div class="user-profile-detail-info">
+        <div class="user-profile-detail-name">
+          {{from.name}}
+        </div>
+        <div class="user-profile-detail-date">
+          {{dateDiff created_time}}
+        </div>
+      </div>
+    </div>
+    <span class='post-action-container'>
+      <span class='post-action'>
+        &#x2807;
+      </span>
+      <div class='post-action-dropdown'>
+        <ul>
+          <li class='edit'>
+              Edit
+          </li>
+          <li class='delete'>
+              Delete
+          </li>
+        </ul>
+      </div>
+    </span>
+  </div>
+</template>

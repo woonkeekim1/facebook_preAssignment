@@ -4,11 +4,17 @@ const postLogSchema = new SimpleSchema({
   postId: {
     type: String,
   },
+  pageId: {
+    type: String,
+  },
+  postedBy: {
+    type: String,
+  },
   type: {
     type: String,
     allowedValues: ['insert', 'delete', 'update']
   },
-  createdAt: {
+  postedAt: {
     type: Date,
   },
 });

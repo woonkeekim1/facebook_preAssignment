@@ -1,0 +1,21 @@
+<template name='postTail'>
+  <div class='post-tail-container'>
+    <div class='post-tail-item like'>
+      Like
+    </div>
+    <div class='post-tail-item comment' id='comment'>
+      <i>
+      </i>
+      Comment
+    </div>
+  </div>
+  <div class='post-tail-comment'>
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </div>
+  <div class='post-tail-write-comment'>
+    <img src='{{userImageUrl}}' class='user-image'>
+    <div class='comment-input-container' contenteditable='true' data-placeholder='Write a comment....'></div>
+  </div>
+</template>
